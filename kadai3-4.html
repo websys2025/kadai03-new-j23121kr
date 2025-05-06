@@ -38,7 +38,7 @@
                 if (selectedItem) {
                     console.log("商品番号:", selectedItem.id, ",商品名:", selectedItem.name, "を購入します。");
                     if(selectedItem.stock>0){
-                        selectedItem.stock=-1;
+                        selectedItem.stock-=1;
                     }else{
                         console.log("在庫がありません");
                     }
